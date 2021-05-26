@@ -10,7 +10,7 @@ function preload(){
 myImage = loadImage("./assets/scimmia01.png");
 myLogo = loadImage("./assets/logo-07.png");
 myMockup = loadImage("./assets/Mockup.png");
-myBackground = loadImage("./assets/sfondo1-06.png");
+myBackground = loadImage("./assets/sfondo2-06.png");
 }
 
 function setup() {
@@ -25,7 +25,7 @@ imageMode(CENTER);
 
 image(myLogo,130, 80,230, 93);
 image (myImage,310,100, 200 ,249);
-image (myBackground,windowWidth/2 + 400, 500, 1333, 1000);
+image (myBackground,windowWidth/2 + 200, 500, 1333, 1000);
 image (myMockup,windowWidth/2 + 400, 500, 1333, 1000);
 
 
