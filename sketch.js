@@ -1,12 +1,16 @@
 let myImage;
 let myLogo;
 let myText1;
+let myMockup;
+let myBackground;
 
 
 
 function preload(){
-myImage = loadImage("./assets/scimmia1.png");
-myLogo = loadImage("./assets/logo.png");
+myImage = loadImage("./assets/scimmia01.png");
+myLogo = loadImage("./assets/logo-07.png");
+myMockup = loadImage("./assets/Mockup.png");
+myBackground = loadImage("./assets/sfondo1-06.png");
 }
 
 function setup() {
@@ -16,10 +20,14 @@ function setup() {
 }
 
 function draw() {
+
 imageMode(CENTER);
 
-image(myLogo,myImage.width/2, myImage.height/2-50);
-image (myImage, myImage.width/2 +150, myImage.height/2-50);
+image(myLogo,130, 80,230, 93);
+image (myImage,310,100, 200 ,249);
+image (myBackground,windowWidth/2 + 400, 500, 1333, 1000);
+image (myMockup,windowWidth/2 + 400, 500, 1333, 1000);
+
 
 
 //buttons
@@ -29,4 +37,8 @@ buttonUtente = createButton("Utente");
 buttonUtente.position(windowWidth/3, windowHeight/13);
 buttonEnte = createButton("Ente");
 buttonEnte.position(windowWidth/3+150, windowHeight/13) ;
+
+
+
+
 }
