@@ -1,6 +1,7 @@
 let myImage;
 let myLogo;
-let myText1 = "Worthy sarà la tua guida in\nquesto viaggiodi crescita personale.\nWorthy ti guiderà suggerendoti\nattività sempre nuove";
+let myText1 = "Worthy sarà la tua guida in\nquesto viaggiodi crescita personale";
+let myText2 = "Worthy ti guiderà suggerendoti\nattività sempre nuove";
 let myMockup;
 let myBackground;
 let myDescription = "Mettiti in gioco\ne scopri il tuo potenziale";
@@ -32,6 +33,12 @@ function draw() {
   textFont('Lexend');
   textSize(30);
   text(myText1, 40, 450);
+
+  fill("#88CBDB");
+  textFont('Lexend');
+  textSize(30);
+  text(myText2, 40, 530);
+
 
 
 
