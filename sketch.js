@@ -1,8 +1,9 @@
 let myImage;
 let myLogo;
-let myText1;
+let myText1 = "Worthy sarà la tua guida in\nquesto viaggiodi crescita personale.\nWorthy ti guiderà suggerendoti\nattività sempre nuove";
 let myMockup;
 let myBackground;
+let myDescription = "Mettiti in gioco\ne scopri il tuo potenziale";
 
 
 
@@ -21,6 +22,19 @@ function setup() {
 
 function draw() {
 
+
+  fill("#1F2849");
+  textFont('Lexend');
+  textSize(35);
+  text(myDescription, 40, 350);
+
+  fill("#FEB596");
+  textFont('Lexend');
+  textSize(30);
+  text(myText1, 40, 450);
+
+
+
 imageMode(CENTER);
 
 image(myLogo,130, 80,230, 93);
@@ -37,6 +51,9 @@ buttonUtente = createButton("Utente");
 buttonUtente.position(windowWidth/3, windowHeight/13);
 buttonEnte = createButton("Ente");
 buttonEnte.position(windowWidth/3+150, windowHeight/13) ;
+
+
+
 
 
 
