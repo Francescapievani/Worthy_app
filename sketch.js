@@ -21,6 +21,8 @@ let myValore4;
 
 
 
+
+
 function preload(){
 myImage = loadImage("./assets/scimmia01.png");
 myLogo = loadImage("./assets/logo-07.png");
