@@ -6,6 +6,7 @@ let myText3 = "   Worthy è";
 let myText4 = "   Worthy è";
 let myText5 = "    Worthy è";
 let myText6 = "   Worthy è";
+let myText7 = "Scarica l'App";
 let myMockup;
 let myBackground;
 let myPratico;
@@ -17,6 +18,8 @@ let myValore1;
 let myValore2;
 let myValore3;
 let myValore4;
+let myAppLogo;
+let myAppBack;
 
 
 
@@ -36,6 +39,8 @@ myValore1= loadImage("./assets/valore1.png");
 myValore2= loadImage("./assets/valore2.png");
 myValore3= loadImage("./assets/valore3.png");
 myValore4= loadImage("./assets/valore4.png");
+myAppLogo = loadImage("./assets/worthy_2.png")
+myAppBack = loadImage("./assets/sfondoapp-10.png");
 }
 
 function setup() {
@@ -45,6 +50,12 @@ function setup() {
 }
 
 function draw() {
+
+  fill("#1F2849");
+  textFont('Lexend');
+  textSize(25);
+  text(myText7, 100, 600);
+
 
 
   fill("#1F2849");
@@ -88,6 +99,13 @@ function draw() {
 
 
 
+  // noStroke();
+  // fill("#88CBDB");
+  // rect(40, 490, 550, 130, 20);
+
+
+
+
 
 
 
@@ -104,6 +122,8 @@ image(myLogo,140, 80,200, 63);
 image (myImage,330,100, 200 ,249);
 image (myBackground,windowWidth/2 + 200, 500, 1333, 1000);
 image (myMockup,windowWidth/2 + 400, 500, 1333, 1000);
+image (myAppBack, 500, 560, 1000,660 );
+image (myAppLogo, 100, 530, 100,100 );
 image (myAmichevole,200,1130, 400 ,336);
 image (myPratico, 620,1100, 400 ,327);
 image (myCostruttivo,1040,1100, 400 ,355);
@@ -112,6 +132,8 @@ image (myValore1, 200, 1340, 260,77 );
 image (myValore2, 630, 1340, 260,77 );
 image (myValore3, 1090, 1340, 260,77 );
 image (myValore4, 1450, 1340, 260,77 );
+
+
 
 
 
